@@ -4,4 +4,9 @@ class PrimeTester:
         result = self.primeTest(x)
         print("The number " + str(x) + " is " + result)
 
+    def primeTest(self, number):
+        if number == 2:
+            result = "prime"
 
+        if number % 2 == 0:
+            result = "not prime"
