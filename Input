@@ -10,3 +10,17 @@ class PrimeTester:
 
         if number % 2 == 0:
             result = "not prime"
+            
+ highesttestnum = number ** 0.5 + 1
+        count = 3
+        while count <= highesttestnum:
+            if number % count == 0:
+                result = "not prime"
+            count += 2
+
+            result= "prime"
+
+        return result
+
+if __name__ == '__main__':
+    obj = PrimeTester()
