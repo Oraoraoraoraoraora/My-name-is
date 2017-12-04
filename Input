@@ -1,0 +1,7 @@
+class PrimeTester:
+    def __init__(self):
+        x = int(raw_input('Input a number to test if prime:'))
+        result = self.primeTest(x)
+        print("The number " + str(x) + " is " + result)
+
+
